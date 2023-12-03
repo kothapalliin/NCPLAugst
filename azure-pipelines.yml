@@ -8,7 +8,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: continuous-delivery-ap
+  demands:
+  - agent.name -equals MyAgent
 
 steps:
 - task: Maven@3
