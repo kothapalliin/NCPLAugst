@@ -8,9 +8,9 @@ trigger:
 - master
 
 pool:
-  name: continuous-delivery-ap
+  name: Azure Pipelines
   demands:
-  - agent.name -equals MyAgent
+  - agent.name -equals Hosted Agent
 
 steps:
 - task: Maven@3
